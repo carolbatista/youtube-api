@@ -1,0 +1,1 @@
+#Criando a galeria de thumbnails com os últimos 12 vídeos de um canal X
