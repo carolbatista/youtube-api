@@ -14,7 +14,7 @@ $(document).ready(function() {
     function pegarVideos(id){
         $.get("https://www.googleapis.com/youtube/v3/playlistItems", {
             part:'snippet',
-            maxResults: 10,
+            maxResults: 12,
             playlistId: id,
             key:'AIzaSyBcLFmimAehvjjYhgsxoy923SpJjxu1m8U'},
         function(data) {
