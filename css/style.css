@@ -1,0 +1,14 @@
+body {
+  background: #F0F0F0;
+}
+
+#janela ul {
+  width: 480px;
+  margin: 0 auto;
+  padding: 0;
+}
+#janela ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 20px;
+}
