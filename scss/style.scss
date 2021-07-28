@@ -1,19 +1,64 @@
 
 body {
     background: #F0F0F0;
-
 }
-            
+
 #janela{
     ul{
         width:1090px;
         margin:0 auto;
         padding:0;
-        li{
+
+		.principal{
             list-style: none;
             display: inline-block;
             margin: 20px;
             cursor: pointer;
-        }
+            position: relative;
+            width: 320px;
+            height: 180px;
+            .foto{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 320px;
+                height: 180px;
+                z-index: 1;
+                clip: rect(0 320px 180px 0);
+                .legenda{
+                    position: absolute;
+                    top: 150px;
+                    left: 0;
+                    width: 310px;
+                    height:150px;
+                    padding: 5px;
+                    z-index: 2;
+                    cursor: pointer;
+                    background-color: rgba(0, 0, 0, 0.7);
+                    transition: all 0.5s ease-out;
+                    -webkit-transition: all 0.5s ease-out;
+                    -moz-transition: all 0.5s ease-out;
+                    -ms-transition: all 0.5s ease-out;
+                    -o-transition: all 0.5s ease-out;
+
+                    &:hover{
+                        top: 100px;
+                    }
+					p{
+						font-family: sans-serif;
+						font-size: 0.7em;
+						color: aliceblue;
+
+					}
+                    h5{
+                        font-family: sans-serif;
+                        text-transform: uppercase;
+                        font-weight: 100;
+                        color: aqua;
+                        margin: 0;
+                    }
+                }
+            }
+            }
     }
 }

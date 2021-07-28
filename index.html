@@ -3,15 +3,46 @@
         <title>You Tube API v3</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link href="fancy/jquery.fancybox.css" media="screen" rel="stylesheet" type="text/css">
         <link href="css/style.css" rel="stylesheet">
-        <script src="js/jquery.js"></script>        
-        <script src="js/meuscript.js"></script>
+        <script src="js/jquery.js"></script>
+
+		<!-- Scripts do fancyBox -->
+        <script src="fancy/jquery.fancybox.js" type="text/javascript"></script>
+        <script src="fancy/jquery.fancybox-media.js" type="text/javascript"></script>
+
+		<script src="js/meuscript.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('.fancybox').fancybox();
+				var fbWidth = 800;
+				var fbHeight = 450;
+
+				$('.fancybox-media')
+				.attr('rel', 'media-gallery')
+				.fancybox({
+					arrows : false,
+					'maxWidth':fbWidth,
+					'maxHeight':fbHeight,
+					'width' :fbWidth,
+					'height' : fbHeight,
+					helpers :{
+						media : {},
+						buttons : {},
+					}
+				});
+			});
+		</script>
+
     </head>
+	<html>
     <body>
         <div id="janela">
             <ul>
-            
+
             </ul>
         </div>
     </body>
+
+	</html>
 </html>
